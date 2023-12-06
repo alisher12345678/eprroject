@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jensondocer</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    nav {
+        position: fixed;
+        width: 100vw;
+        font-weight: bold;
+        z-index: 4;
+        background-color: black;
+    }
+
+    #navbrand {
+        color: #ff0433;
+    }
+
+    nav,
+    #navlink {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .navlinkitem a {
+        margin: 0px 20px;
+        color: white;
+    }
+
+    .navlinkitem a:hover {
+        color: #ff0433;
+        transition: all .4s ease;
+    }
+
+    #megamenu {
+        width: 100vw;
+        left: 0%;
+        top: 38px;
+        background-color: black;
+        position: absolute;
+        color: aliceblue;
+        visibility: hidden;
+        padding: 30px 20px;
+    }
+
+    .megahover:hover #megamenu {
+        visibility: visible;
+        transition: all .3s linear;
+    }
+     
+    .megahover:hover #brands{
+        filter: brightness(0%);
+    } 
+
+    .megawrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        background-color: black;
+        padding: 5px 10px;
+    }
+
+    .megaitems {
+        width: 20vw;
+        padding: 10px 20px;
+    }
+
+    .megaitems img {
+        width: 100%;
+        height: 185px;
+        display: block;
+        margin-top: 20px;
+    }
+    main{
+        background-color: black;
+        color: white;
+    }
+    #banner {
+        color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        background: url("./images/limitedmenu.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+        width: 100vw;
+        font-size: 3rem;
+        font-weight: bold;
+        z-index: -2;
+    }
+
+    #banner p {
+        background-color: rgb(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+
+    #brands {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .brandintro {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .brandtitle {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    
+    .brandintro {
+        width: 30vw;
+    }
+
+    .brandintro:hover{
+        box-shadow: 0px 0px 20px gray;
+        transition: all .3s linear;
+    }
+
+    .brandintro p {
+        word-wrap: break-word;
+    }
+
+    .brandintro img {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .btn-primary {
+        background-color: #ff0433;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    .btn-primary:hover {
+        background-color: gray;
+        cursor: pointer;
+        transition: all .2s linear;
+    }
+
+    footer {
+        width: 100vw;
+        padding: 10px;
+        background-color: gray;
+        color: white;
+        top: 100%;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <h1 id="navbrand">JENSONDOCER</h1>
+            <ul id="navlink">
+                <li class="navlinkitem"><a href="index.html">Home</a></li>
+                <li class="navlinkitem"><a href="aboutus.html">About Us</a></li>
+                <li class="navlinkitem"><a href="contactus.html">Contact Us</a></li>
+                <li class="navlinkitem megahover">
+                    <a href="products.html">Products</a>
+                    <ul id="megamenu">
+                        <div class="megawrapper">
+                            <li class="megaitems">DavidOff products
+                                <a href="metal.html">
+                                    <img src="./images/davidoffmenuimg3.webp" alt="metal products">
+                                </a>
+                            </li>
+                            <li class="megaitems">LImited Products
+                                <a href="metal.html">
+                                    <img src="./images/limitedmenu.webp" alt="metal products">
+                                </a>
+                            </li>
+                            <li class="megaitems">Cuban Products
+                                <a href="metal.html">
+                                    <img src="./images/cubanmenu.webp" alt="metal products">
+                                </a>
+                            </li>
+                            <li class="megaitems">Cigarillos Products
+                                <a href="metal.html">
+                                    <img src="./images/carigillosmenu.webp" alt="metal products">
+                                </a>
+                            </li>
+                            <li class="megaitems">Journal Products
+                                <a href="metal.html">
+                                    <img src="./images/journalmenuone.webp" alt="metal products">
+                                </a>
+                            </li>
+                            <li class="megaitems">New world Products
+                                <a href="metal.html">
+                                    <img src="./images/newworldmenu.webp" alt="metal products">
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+
+    <main>
+        <div id="banner">
+            <p>GET YOUR DREAM PRODUCTS FROM </p>
+            <p style="color: #ff0433;">JENSONDOCER</p>
+        </div>
+        <div>
+            <h2 style="padding: 10px;width: fit-content;margin: 20px auto;">Famous Brands</h2>
+            <div id="brands">
+                <div class="brandintro">
+                    <img src="./images/davidoffmenuimg3.webp" alt="">
+                    <p class="brandtitle">Journal</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi architecto rem sapiente
+                        necessitatibus?</p>
+                    <button class="btn-primary">View More</button>
+                </div>
+                <div class="brandintro">
+                    <img src="./images/newworldmenu.webp" alt="">
+                    <p class="brandtitle">Davidoff</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi architecto rem sapiente
+                        necessitatibus?</p>
+                    <button class="btn-primary">View More</button>
+                </div>
+                <div class="brandintro">
+                    <img src="./images/journalmenuone.webp" alt="">
+                    <p class="brandtitle">New world</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi architecto rem sapiente
+                        necessitatibus?</p>
+                    <button class="btn-primary">View More</button>
+                </div>
+                <div class="brandintro">
+                    <img src="./images/journalmenutwo.webp" alt="">
+                    <p class="brandtitle">Limited</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi architecto rem sapiente
+                        necessitatibus?</p>
+                    <button class="btn-primary">View More</button>
+                </div>
+                <div class="brandintro">
+                    <img src="./images/cigarbbundle.webp" alt="">
+                    <p class="brandtitle">Cigarillos</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi architecto rem sapiente
+                        necessitatibus?</p>
+                    <button class="btn-primary">View More</button>
+                </div>
+                <div class="brandintro">
+                    <img src="./images/davidoffmenuimg3.webp" alt="">
+                    <p class="brandtitle">Cuban</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab excepturi architecto rem sapiente
+                        necessitatibus? </p>
+                    <button class="btn-primary">View More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p align="center">&COPY;All Rights reserved; HASSAAN 2023.</p>
+    </footer>
+
+</body>
+
+</html>
